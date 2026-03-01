@@ -7,4 +7,31 @@
 body{
     color: rgb(52, 0, 222);
     background-color: black;
+    background-image: url("./Images/SpaceBackground1.png");
+    background-size: cover;
+}
+
+.flexContainer{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.colum{
+    flex: 20%;
+    max-width: 20%;
+}
+
+.colum img{
+    width: 97.5%;
+    margin-top: 10px;
+}
+
+@media screen and (max-width:800px) {
+    .colum{flex: 50%;
+    max-width: 50%;}
+}
+
+@media screen and (max-width:600px) {
+    .colum{flex: 100%;
+    max-width: 100%;}
 }
